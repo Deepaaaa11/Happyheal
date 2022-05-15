@@ -1,0 +1,104 @@
+<html>
+<head>
+<style type="text/css">
+#more{
+display:none;
+}
+h3{
+text-align:center;
+background-color:lightpink;
+}
+body{
+background-color:lavender;
+}
+#myBtn{
+background:linear-gradient(35deg,lightpink,lavender);
+border-radius:6px;
+}
+#myBtn1{
+background:linear-gradient(35deg,lightpink,lavender);
+border-radius:6px;
+}
+#myBtn2{
+background:linear-gradient(35deg,lightpink,lavender);
+border-radius:6px;
+}
+
+p{
+text-align:justify;
+}
+</style></head>
+<body>
+<h3> Anaesthesia</h3>
+<p>It is the practice of medicine dedicated to total care of surgical patient before,during and after surgery.<br>
+Before surgery patients meet anaesthesiologist which goes through patient detailed,medical history and coordinates
+the optimisation of any medical problems with various specialists.<span id="dots">......</span>
+<span id="more">They apply their knowlwdge of medicine to fulfill their primary role in the operating room which is not only to ensure patient
+comport during surgery but also to protect. These include treating ,regulating changes in your critical life function like
+breathing, fluid balance,blood pressure and management of blood loss during ongoing surgery. Any problem during ongoing
+surgery related to heart,lungs ,kidney and so on are diagnosis immediately.</span></p>
+<button onclick="myFunction()" id="myBtn"> Read More</button>
+
+<h3> Heart Center</h3>
+<p>The center of cardiology perform emergency cardiac procedures like acute myocardial infarction angioplasty, primary angioplasty and other procedures too.
+<br>The center of cardiology also offer a  full range of non invasion advanced diagnostic services including electocardiogram,echocardiogram,ambulatory blood pressure monitoring, holter monitoring etc<span id="dots1">......</span>
+<span id="more1">Our comprehensive and advanced cardiac care program include cardiology, vascular medicine, support service as well as state of art diagnostic
+services like 3 tesla MRI,128 Slice CT scanner. We also offer procedures like TPI,PPI,Heart hole surgery etc.</span></p>
+<button onclick="myFunction1()" id="myBtn1"> Read More</button>
+
+<h3> Dermatology and Skin Care Center</h3>
+<p>The department of Dermatology offer treatment for all skin, hair, nails and related diseases. We provide service ranging from surgical, cosmetic and peadriatic dermatology.<span id="dots2">......</span>
+<span id="more2">We also provide advanced dermatology disorder like acne, psoriasis,eczema,hair loss,sexually transmitted diseases etc. Our expert 
+specialized in treating skin cancer,eczema,acne,shingles, hair loss, moles as well as dieaseases of oral mucuos membrane,genital disorder,leg ulcers and so on. We also provide treatment for leukoderma(dark,brown,black patches). Those who are seeking for glowing skin we can provide you that facility.</span></p>
+<button onclick="myFunction2()" id="myBtn2"> Read More</button>
+
+<script type="text/javascript">
+function myFunction(){
+var dots=document.getElementById("dots");
+var moreText=document.getElementById("more");
+var btnText=document.getElementById("myBtn");
+if(dots.style.display==="none"){
+dots.style.display="inline";
+btnText.innerHTML="Read More";
+moreText.style.display="none";
+} else{
+dots.style.display="none";
+btnText.innerHTML="Read Less";
+moreText.style.display="inline";
+}
+}
+
+function myFunction1(){
+var dots=document.getElementById("dots1");
+var moreText=document.getElementById("more1");
+var btnText=document.getElementById("myBtn1");
+if(dots.style.display==="none"){
+dots.style.display="inline";
+btnText.innerHTML="Read More";
+moreText.style.display="none";
+} else{
+dots.style.display="none";
+btnText.innerHTML="Read Less";
+moreText.style.display="inline";
+}
+}
+function myFunction2(){
+var dots=document.getElementById("dots2");
+var moreText=document.getElementById("more2");
+var btnText=document.getElementById("myBtn2");
+if(dots.style.display==="none"){
+dots.style.display="inline";
+btnText.innerHTML="Read More";
+moreText.style.display="none";
+} else{
+dots.style.display="none";
+btnText.innerHTML="Read Less";
+moreText.style.display="inline";
+}
+}
+
+</script>
+</body>
+</html>
+
+ 

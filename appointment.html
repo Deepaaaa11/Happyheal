@@ -1,0 +1,153 @@
+ <!Doctype HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="appointment.css">
+<script>
+  let x = document.forms["myForm"]["name"].value;
+  let y = document.forms["myForm"]["address"].value;
+  let z = document.forms["myForm"]["phn"].value;
+  let m = document.forms["myForm"]["email"].value;
+  let n= document.forms["myForm"]["dob"].value;
+  let o= document.forms["myForm"]["appdate"].value;
+  let p= document.forms["myForm"]["department"].value;
+  if (x == "") {
+    window.alert("Name must be filled out");
+    return false;
+  }
+  if (y == "") {
+    window.alert("Address must be filled");
+    return false;
+  }
+  if (z == "") {
+    window.alert("Phone Number must be filled");
+    return false;
+}
+ if (m == "") {
+    window.alert("Email must be filled");
+    return false;}
+  if (n == "") {
+    window.alert("Date of birth must be filled");
+    return false;
+  }
+if (o == "") {
+    window.alert("Appointment date must be filled");
+    return false;
+  }
+
+if (p == "") {
+  	window.alert("Department must be filled");
+  	return false;
+  }
+  else{
+  	function Submit() {
+ window.alert("Submitted for Appointment");
+ 	return false;
+}
+}
+
+function onlynum(){
+  var phonenum=document.forms["myForm"]["phn"].value;
+  if(isNaN(phonenum)){
+    alert("Please enter number only");
+    return false;
+  }else{
+    return true;
+  }
+}
+
+</script>
+</head>
+<body bgcolor="lavender" font-color=" black" font-size="60px">
+<form name="myForm" onsubmit="return Submit()" method="get" autocomplete="off">
+<table border="0" width="400px" cellpadding="0" cellspacing="0" align="center">
+<center><tr><td><h2> Request For Appointment</h2></td></tr></center>
+<tr><td>&nbsp;</td></tr></table>
+<table><tr><td><h3>Patients Detail</h3></td></tr></table>
+<table>
+<tr>
+<td><label for="name"> Patient Name </label></td>
+<td>:</td>
+<td><input type="text" name="name" placeholder="Enter your name" autocomplete="off" spellcheck="true"></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td><label for=" address"> Address </label> &nbsp;</td>
+<td>:</td>
+<td><input type="text" name="address" placeholder="Enter your address" autocomplete="off" spellcheck="true" ></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+	<td><label for="phn">Phone Number</label></td>
+<td>:</td>
+<td><input type="text" name="phn" placeholder="Enter your phone number" autocomplete="off"  maxlength="10" onkeypress="return onlynum()"></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td><label for="email">Email Address</label></td>
+<td>:</td>
+<td><input type="text" name="email" placeholder="Enter your email address" autocomplete="off"></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td><label for="gender">Gender</label></td>
+<td>:</td>
+<td><input type="radio" name="gender" value="1" autocomplete="off"  checked> Female
+<input type="radio" name="gender" value="0" autocomplete="off" > Male</td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td><label for="dob">Date of Birth</label></td>
+<td>:</td>
+<td><input type="date" name="dob"></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+<hr>
+<table><tr><td><h3> Schedule Information</h3></td></tr></table>
+<table>
+<tr>
+<td><label for="appdate"> Appointment Date </label></td>
+<td>:</td>
+<td><input type="date" name="appdate" placeholder="enter your date" autocomplete="off"></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td><label for="time"> Preferred Time </label></td>
+<td>:</td>
+<td><select name=" PreferredTime">
+<option value="">---------Select-----------</option>
+<option value="0">10 am - 11 am</option>
+<option value="1">11 am - 12 am</option>
+<option value="2">12 am - 1 pm</option>
+<option value="3">1 pm - 2 pm</option>
+<option value="4">2 pm - 3 pm</option>
+<option value="5">3 pm - 4 pm</option>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td><label for="department"> Department</td>
+<td>:</td>
+<td> <select name="department">
+<option value="10">--------Select---------</option>
+<option value="0">Cardiology</option>
+<option value="1">Dermatology</option>
+<option value="2">ENT</option>
+<option value="3">Opthamology</option>
+<option value="4">Internal Medicine</option>
+<option value="5">Pediatic</option>
+<option value="6">Urology</option>
+<option value="7">General Surgery</option>
+<option value="8">Dental Care</option>
+<option value="9">Nephrology</option></select></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td><label for="history"> Patient History</label></td>
+<td>:</td>
+<td><textarea rows="10" cols="15" placeholder="History"></textarea></td></tr>
+</table>
+<hr>
+<button type="submit" >Submit Details</button>&nbsp;
+<button type="reset"> Reset All</button>
+</form>
+</body>
+</html>

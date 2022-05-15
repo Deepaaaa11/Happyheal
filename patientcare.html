@@ -1,0 +1,123 @@
+<html>
+<body>
+<h1>Patient care and service</h1>
+<h3>Category of rooms</h3>
+<div class="container">
+<img class="mySlides" src="img1.jpg"style="width:800px;height: 500px">
+<img class="mySlides" src="img2.jpg"style="width:800px;height: 500px">
+<img class="mySlides" src="img3.jpg"style="width:800px;height: 500px">
+<img class="mySlides" src="img4.jpg"style="width:800px;height: 500px">
+<img class="mySlides" src="img5.jpg"style="width:800px;height: 500px">
+<img class="mySlides" src="img6.jpg"style="width:800px;height: 500px">
+<img class="mySlides" src="img7.jpg"style="width:800px;height: 500px">
+<img class="mySlides" src="img8.jpg"style="width:800px;height: 500px">
+<br>
+</div>
+<button class="display-left" onclick="plusDivs(-1)">....Previous....</button>
+<button class="display-right" onclick="plusDivs(+1)">  ......Next......  </button>
+<script type="text/javascript">
+var slideIndex=1;
+  showDivs(slideIndex);
+function plusDivs(n) {
+showDivs(slideIndex+=n)
+}
+function showDivs(n){
+  var i;
+var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+}
+  x[slideIndex-1].style.display = "block";
+}
+ function topFunction(){
+mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
+}
+
+ }
+</script>
+<p>
+<dl>
+<dt> General Ward</dt>
+<dd> -General ward is common unit where patuents  who are admitted share the same room</dd>
+<dt> Standard Ward</dt>
+<dd>- Standard ward is a ward which provide the standard level of treatment and appropiate nursing care</dd>
+<dt>Deluxe Room</dt>
+<dd>-Deluxe Room is designed for single patient which has essential amenties like closet, attached bathroom,nurse call system,personal locker and television with multiple channels.</dd>
+<dt> Emergency and Intensive Care Unit is also present.</dt>
+</dl></p>
+<hr>
+<h3> Admission and Discharge</h3>
+<dl>
+<dt>Admission Process</dt>
+<dd>-Hospital staff will draw out an estimate and guide for selecting the relevant category of room.<br>
+- Youneed to make advance payment and the advance shall be adjusted against the final bill at the time of discharge.</dd>
+<dt>Discharge </dt>
+<dd>-Hospital staff will assist you in discharge process which may take sometime and finally bill is generated.<br>
+-Once the payment is done all the paper will be handed over and nurse will explain the medication to be continue after discharge with follow up instruction.</dd></dl>
+<hr>
+<h3> Pharmacy </h3>
+<ul>
+<li> Open 24 hours and all prescribed medicine and vaccine are available</li>
+<li>It is located at the ground floor and provide service to both inpatient and outpatient.</li>
+</ul>
+<div class="pharm">
+<a href="pimg1.jpg" >
+<img src="pimg1.jpg"alt="Image" style="width:400px;height: 400px"></a>
+<a href="phar1.jpg" >
+<img src="phar1.jpg"alt="Image" style="width:400px;height: 400px"></a>
+<a href="pimg2_1.jpg" >
+<img src="pimg2_1.jpg" alt="Image" style="width:400px;height: 400px"></a></div>
+<hr>
+<h3> Pathology</h3>
+<p>
+  A laboratory where test are carried out on clinical specimens to obtain information about health of patient to aid in diagnosis,treatment and prevention of disease.</p>
+<br>
+<img src="lab1.jpg" alt="image" style="padding-right: 50px;width:250px;height: 250px">
+<img src="lab2.jpg" alt="image" style="padding-right: 50px;width:250px;height: 250px">
+<img src="lab3.jpg" alt="image" style="padding-right: 50px;width:250px;height: 250px">
+<img src="lab4.jpg" alt="image" style="padding-right: 50px;width:250px;height: 250px">
+
+<hr>
+<h3> Other Facilities</h3>
+<ul>
+<li>In Hospital Cafeteria</li>
+<li>Parking Services</li>
+<li>Telephone Services</li>
+<li>Wifi</li>
+<li>Drinking</li>
+<li>Housekeeping</li>
+</ul>
+</body>
+<style type="text/css">
+h1{
+background-color:lavenderblush;
+font-size:25px;
+text-align:center;
+}
+body{
+background-color:lavender;
+}
+.pharm a{
+padding-right: 40px;
+}
+button{
+background-color: lightgrey;
+}
+button:hover{
+  background-color: darkgray;
+}
+</style>
+</html>
